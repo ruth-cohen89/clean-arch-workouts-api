@@ -1,8 +1,9 @@
-//import Id from "../Id";
+import Id from "../Id";
 //import buildMakeWorkout from "./workout";
 const buildMakeWorkout = require("./workout");
+const Validate = require("../../utils/validate");
 
-//const makeWorkout = buildMakeWorkout({ Id, currentDay });
+const makeWorkout = buildMakeWorkout({ Id, currentDay });
 
 //export default makeWorkout;
 
