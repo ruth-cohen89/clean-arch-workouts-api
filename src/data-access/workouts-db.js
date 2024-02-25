@@ -12,7 +12,10 @@ function makeWorkoutsDb({ Workout }) {
     return await Workout.findByIdAndDelete(id);
   };
   updateOne = async (id, input) => {
-    return await Workout.findByIdAndUpdate(id, input, { new: true });
+    return await Workout.findByIdAndUpdate(id, input, {
+      new: true,
+      runValidators: true,
+    });
   };
 
   return Object.freeze({
