@@ -9,7 +9,7 @@ function makeWorkoutsDb({ Workout }) {
     return await Workout.create(input);
   };
   const deleteOne = async (id) => {
-    return await Workout.deleteById(id);
+    return await Workout.findByIdAndDelete(id);
   };
   updateOne = async (id, input) => {
     return await Workout.findByIdAndUpdate(id, input, { new: true });
