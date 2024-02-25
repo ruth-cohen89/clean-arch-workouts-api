@@ -1,6 +1,4 @@
 const makeWorkoutsDb = require("./workouts-db");
-const Workout = require("..models/workout");
-
-const workoutsDb = makeWorkoutsDb({ Workout });
+const workoutsDb = require("..models/workout")({ makeWorkoutsDb });
 
 module.exports = workoutsDb;
