@@ -1,5 +1,5 @@
 function makeDeleteWorkout({ workoutsDb }) {
-  return async function deleteWorkout({ id } = {}) {
+  return async function deleteWorkoutUC({ id } = {}) {
     const workout = await workoutsDb.deleteWorkout(id);
 
     if (!workout) {

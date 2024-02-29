@@ -1,5 +1,5 @@
 function makeUpdateWorkout({ workoutsDb }) {
-  return async function updateWorkout({ id, body } = {}) {
+  return async function updateWorkoutUC({ id, body } = {}) {
     const workout = await workoutsDb.updateWorkout(id, body);
 
     // check if working

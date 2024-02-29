@@ -1,5 +1,5 @@
 function makeGetWorkouts({ workoutsDb, workout }) {
-  return async function getWorkouts({ body, headers, user }) {
+  return async function getWorkoutsUC({ body, headers, user }) {
     // let filter = {};
     // if (req.params.userId) filter = { user: req.params.userId };
     // const features = new APIFeatures(Model.find(filter), req.query)

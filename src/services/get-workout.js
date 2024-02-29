@@ -1,5 +1,5 @@
 function makeGetWorkout({ workoutsDb }) {
-  return async function getWorkout({ id } = {}) {
+  return async function getWorkoutUC({ id } = {}) {
     let query = workoutsDb.getById(id);
     query = query.select("-__v");
 
