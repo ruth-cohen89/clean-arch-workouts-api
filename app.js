@@ -14,6 +14,10 @@ const protocol = config.get("protocol");
 
 const app = express();
 
+app.get("/", (req, res) => {
+  res.json("Welcome to workout-api :)");
+});
+
 app.use(
   cors({
     origin: config.get("origin"),
