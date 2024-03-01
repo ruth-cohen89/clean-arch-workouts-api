@@ -4,3 +4,5 @@ function makeCreateWorkout({ workoutsDb, workout }) {
     return await workoutsDb.createOne(body);
   };
 }
+
+module.exports = makeCreateWorkout;

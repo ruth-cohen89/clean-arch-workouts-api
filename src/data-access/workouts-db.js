@@ -26,3 +26,5 @@ function makeWorkoutsDb({ Workout }) {
     updateOne,
   });
 }
+
+module.exports = makeWorkoutsDb;
