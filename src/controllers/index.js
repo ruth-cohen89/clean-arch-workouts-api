@@ -7,14 +7,15 @@ const {
   updateWorkotUC,
 } = require("../services");
 
-const getWorkout = require("./get-workout.js")({
+const getWorkout = require("./get-workout")({
   getWorkotUC,
   catchAsync,
 });
-const getWorkouts = require("./get-workouts.js")({
-  getWorkoutsUC,
-  catchAsync,
-});
+console.log(catchAsync, getWorkout);
+
+const getWorkouts = require("./get-workouts")({ getWorkoutsUC, catchAsync });
+console.log(catchAsync, getWorkouts);
+
 const updateWorkout = require("./update-workout.js")({
   updateWorkotUC,
   catchAsync,

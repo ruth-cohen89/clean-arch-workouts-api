@@ -11,7 +11,7 @@ async function connect() {
     await mongoose.connect(DB, {
       w: "majority",
     });
-    console.log("DB connected");
+    console.log("DB is connected");
   } catch (error) {
     console.error("Could not connect to db");
     console.error(error);

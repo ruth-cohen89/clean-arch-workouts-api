@@ -5,3 +5,5 @@ function getWorkouts({ getWorkoutsUC, catchAsync }) {
     res.status(200).send(workouts);
   });
 }
+
+module.exports = getWorkouts;

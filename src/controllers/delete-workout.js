@@ -6,3 +6,5 @@ function deleteWorkout({ deleteWorkoutUC, catchAsync }) {
     res.status(200).json("Workout deleted");
   });
 }
+
+module.exports = deleteWorkout;

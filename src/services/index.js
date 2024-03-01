@@ -1,5 +1,4 @@
 const workoutsDb = require("../data-access");
-console.log(workoutsDb);
 const createWorkoutUC = require("./create-workout")({ workoutsDb });
 const getWorkoutsUC = require("./get-workouts")({ workoutsDb });
 const getWorkoutUC = require("./get-workout")({ workoutsDb });

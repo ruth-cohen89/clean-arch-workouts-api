@@ -7,3 +7,5 @@ function makeDeleteWorkout({ workoutsDb }) {
     }
   };
 }
+
+module.exports = makeDeleteWorkout;

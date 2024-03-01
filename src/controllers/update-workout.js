@@ -6,3 +6,5 @@ function updateWorkout({ updateWorkoutUC, catchAsync }) {
     res.status(200).send(updatedWorkout);
   });
 }
+
+module.exports = updateWorkout;
