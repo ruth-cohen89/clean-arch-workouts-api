@@ -2,6 +2,13 @@
 
 This Node.js application provides an API for managing workouts. It follows the clean architecture principles introduced by Bob Martin and serves as a demonstration of how to implement such architecture in a Node.js project.
 
+## Prerequisites
+
+Before running this project, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/en/): Ensure you have Node.js installed.
+- [MongoDB](https://www.mongodb.com/): Ensure you have MongoDB installed and running.
+
 ## Installation
 
 1. **Clone the repository:**
@@ -30,6 +37,8 @@ This Node.js application provides an API for managing workouts. It follows the c
 
    ```
    NODE_ENV=development
+   DATABASE=your-database-name
+   DATABASE_PASSWORD=your-database-password
    ```
 
    This environment variable controls the application's runtime environment.
