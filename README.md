@@ -46,9 +46,10 @@ Before running this project, ensure you have the following installed:
 3. **Set up MongoDB connection:**
    Replace `your-database-name` with your MongoDB database name and `your-database-password` with your MongoDB database password in the `.env` file. Make sure to replace `your-database-name` and `your-database-password` with your actual MongoDB database name and password, respectively.
 
-````plaintext
+```
 DATABASE=your-database-name
 DATABASE_PASSWORD=your-database-password
+```
 
 ## Usage
 
@@ -56,7 +57,9 @@ DATABASE_PASSWORD=your-database-password
 
    ```bash
    npm start
-````
+   ```
+
+```
 
 2. **Access the API endpoints using a tool like `curl`, `Postman`, or integrate it into your frontend application.**
 
@@ -82,3 +85,4 @@ Contributions are welcome! If you have suggestions for improvements, or if you e
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+```
