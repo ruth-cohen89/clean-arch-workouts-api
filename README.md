@@ -59,8 +59,6 @@ DATABASE_PASSWORD=your-database-password
    npm start
    ```
 
-```
-
 2. **Access the API endpoints using a tool like `curl`, `Postman`, or integrate it into your frontend application.**
 
 ## Project Structure
@@ -85,4 +83,7 @@ Contributions are welcome! If you have suggestions for improvements, or if you e
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+```
+
 ```
