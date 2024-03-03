@@ -4,7 +4,7 @@ function deleteWorkout({ deleteWorkoutUC, catchAsync }) {
       const deletedWorkout = await deleteWorkoutUC(req.params);
       if (!deletedWorkout)
         return res.status(404).send({ error: "Workout not found" });
-      res.status(200).json("Workout deleted");
+      res.status(204).send();
     } catch (error) {
       next(error);
     }

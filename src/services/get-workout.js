@@ -1,5 +1,6 @@
 function makeGetWorkout({ workoutsDb }) {
-  return async function getWorkoutUC({ id } = {}) {
+  return async function getWorkoutUC(params) {
+    const { id } = params;
     return await workoutsDb.getById(id);
   };
 }

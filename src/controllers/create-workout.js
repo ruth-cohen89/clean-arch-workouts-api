@@ -1,7 +1,7 @@
-function createWorkout({ getWorkoutUC, catchAsync }) {
+function createWorkout({ createWorkoutUC, catchAsync }) {
   return catchAsync(async (req, res, next) => {
     try {
-      const workout = await getWorkoutUC(req.params);
+      const workout = await createWorkoutUC(req.body);
       res.status(200).send(workout);
     } catch (error) {
       next(error);

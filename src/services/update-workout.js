@@ -1,11 +1,7 @@
 function makeUpdateWorkout({ workoutsDb }) {
-  return async function updateWorkoutUC({ id, body } = {}) {
-    const workout = await workoutsDb.updateWorkout(id, body);
-
-    // check if working
-    if (!workout) {
-      throw new NotFoundError("Workout does not exist");
-    }
+  return async function updateWorkoutUC(params, body) {
+    const { id } = params;
+    return await workoutsDb.updateOne(id, body);
   };
 }
 module.exports = makeUpdateWorkout;

@@ -1,10 +1,7 @@
 function makeDeleteWorkout({ workoutsDb }) {
-  return async function deleteWorkoutUC({ id } = {}) {
-    const workout = await workoutsDb.deleteWorkout(id);
-
-    if (!workout) {
-      throw new NotFoundError("Workout does not exist");
-    }
+  return async function deleteWorkoutUC(params) {
+    const { id } = params;
+    return await workoutsDb.deleteOne(id);
   };
 }
 

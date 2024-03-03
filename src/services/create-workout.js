@@ -1,6 +1,5 @@
-function makeCreateWorkout({ workoutsDb, workout }) {
-  return async function postworkoutUC({ body, headers, user }) {
-    // Validate parameters...
+function makeCreateWorkout({ workoutsDb }) {
+  return async function createWorkoutUC(body) {
     return await workoutsDb.createOne(body);
   };
 }
