@@ -2,7 +2,7 @@ const {
   handleCastErrorDB,
   handleDuplicateFieldsDB,
   handleValidationErrorDB,
-} = require("./errorHandling");
+} = require("../utils/errorHandling");
 
 const sendErrorDev = (err, req, res) => {
   return res.status(err.statusCode).json({

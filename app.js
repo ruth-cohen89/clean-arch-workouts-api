@@ -7,7 +7,8 @@ const bodyParser = require("body-parser");
 const connect = require("./src/utils/connect");
 
 const router = require("./src/routes");
-const AppError = require("./utils/appError");
+const AppError = require("./src/utils/appError");
+const globalErrorHandler = require("./src/middlewares/errorHandlerMiddleware.js");
 
 const port = config.get("port");
 const host = config.get("host");
