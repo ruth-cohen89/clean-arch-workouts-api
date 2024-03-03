@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const connect = require("./src/utils/connect");
 
 const router = require("./src/routes");
+const AppError = require("./utils/appError");
 
 const port = config.get("port");
 const host = config.get("host");
@@ -37,6 +38,12 @@ app.use(bodyParser.json({ limit: "15mb" }));
 app.use(bodyParser.urlencoded({ limit: "15mb", extended: true }));
 
 app.use(router);
+
+app.all("*", (req, res, next) => {
+  next(new AppError(`Can't find ${req.originalUrl} on this server 🙄`, 404));
+});
+
+app.use(globalErrorHandler);
 
 app.listen(port, async () => {
   console.log(`App is running at ${protocol}://${host}:${port}`);

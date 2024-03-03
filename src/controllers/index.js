@@ -13,7 +13,6 @@ const getWorkout = require("./get-workout")({
 });
 
 const getWorkouts = require("./get-workouts")({ getWorkoutsUC, catchAsync });
-console.log("getWorkouts", getWorkouts);
 
 const updateWorkout = require("./update-workout.js")({
   updateWorkoutUC,

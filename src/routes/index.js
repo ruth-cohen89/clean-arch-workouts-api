@@ -10,8 +10,8 @@ const {
 
 router.get("/workouts/:id", getWorkout);
 router.get("/workouts", getWorkouts);
-// router.post("/workouts", createWorkout);
-// router.put("/workouts/:id", updateWorkout);
-// router.delete("/workouts/:id", deleteWorkout);
+router.post("/workouts", createWorkout);
+router.put("/workouts/:id", updateWorkout);
+router.delete("/workouts/:id", deleteWorkout);
 
 module.exports = router;
