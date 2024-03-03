@@ -11,21 +11,11 @@ Before running this project, ensure you have the following installed:
 
 ## Installation
 
-1. **Clone the repository:**
+1. **1. Clone the repo and install dependencies:**
 
    ```bash
    git clone https://github.com/your-username/workouts-api.git
-   ```
-
-2. **Navigate into the project directory:**
-
-   ```bash
    cd workouts-api
-   ```
-
-3. **Install dependencies:**
-
-   ```bash
    npm install
    ```
 
