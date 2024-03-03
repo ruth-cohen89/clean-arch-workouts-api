@@ -31,17 +31,24 @@ Before running this project, ensure you have the following installed:
 
 ## Configuration
 
-1. **Create a `.env` file in the root directory of the project.**
+1. **Create a `.env` file:**
+   Create a `.env` file in the root directory of the project.
 
-2. **Define the `NODE_ENV` variable in the `.env` file and set it to either `development` or `production`. For example:**
+2. **Define the `NODE_ENV` variable:**
+   In the `.env` file, set the `NODE_ENV` variable to either `development` or `production`. For example:
 
    ```
    NODE_ENV=development
-   DATABASE=your-database-name
-   DATABASE_PASSWORD=your-database-password
    ```
 
    This environment variable controls the application's runtime environment.
+
+3. **Set up MongoDB connection:**
+   Replace `your-database-name` with your MongoDB database name and `your-database-password` with your MongoDB database password in the `.env` file. Make sure to replace `your-database-name` and `your-database-password` with your actual MongoDB database name and password, respectively.
+
+````plaintext
+DATABASE=your-database-name
+DATABASE_PASSWORD=your-database-password
 
 ## Usage
 
@@ -49,7 +56,7 @@ Before running this project, ensure you have the following installed:
 
    ```bash
    npm start
-   ```
+````
 
 2. **Access the API endpoints using a tool like `curl`, `Postman`, or integrate it into your frontend application.**
 
