@@ -57,6 +57,7 @@ DATABASE_PASSWORD=your-database-password
 
    ```bash
    npm start
+
    ```
 
 2. **Access the API endpoints using a tool like `curl`, `Postman`, or integrate it into your frontend application.**
