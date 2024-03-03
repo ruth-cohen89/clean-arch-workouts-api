@@ -7,7 +7,7 @@ This Node.js application provides an API for managing workouts. It follows the c
 Before running this project, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/en/): Ensure you have Node.js installed.
-- [MongoDB](https://www.mongodb.com/): Ensure you have MongoDB installed and running.
+- [MongoDB](https://www.mongodb.com/): Use MongoDB Atlas or install and run MongoDB locally.
 
 ## Installation
 
@@ -46,10 +46,10 @@ Before running this project, ensure you have the following installed:
 3. **Set up MongoDB connection:**
    Replace `your-database-name` with your MongoDB database name and `your-database-password` with your MongoDB database password in the `.env` file. Make sure to replace `your-database-name` and `your-database-password` with your actual MongoDB database name and password, respectively.
 
-```
-DATABASE=your-database-name
-DATABASE_PASSWORD=your-database-password
-```
+   ```
+   DATABASE=your-database-name
+   DATABASE_PASSWORD=your-database-password
+   ```
 
 ## Usage
 
