@@ -14,8 +14,8 @@ Before running this project, ensure you have the following installed:
 1. **Clone the repo and install dependencies:**
 
    ```bash
-   git clone https://github.com/ruth-cohen89/workouts-api.git
-   cd workouts-api
+   git clone https://github.com/ruth-cohen89clean-arch-workouts-api.git
+   cd clean-arch-workouts-api
    npm install
    ```
 
