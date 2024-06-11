@@ -2,7 +2,7 @@
 
 This Node.js application provides an API for managing workouts. It follows the clean architecture principles introduced by Bob Martin and serves as a demonstration of how to implement such architecture in a Node.js project.
 
-<p align="center">
+<p align="left">
   <img width="568" height="401" src="https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg" />
 </p>
 
