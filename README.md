@@ -1,4 +1,4 @@
-# Workouts API
+# Clean Architecture Workouts API
 
 This Node.js application provides an API for managing workouts. It follows the clean architecture principles introduced by Bob Martin and serves as a demonstration of how to implement such architecture in a Node.js project.
 
